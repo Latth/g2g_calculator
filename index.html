@@ -39,14 +39,16 @@
 
         <ul class="list-group">
             <li class="list-group-item d-flex justify-content-center align-items-center">
-                <span id="last-price-tl" class="badge badge-primary badge-pill"
-                    style="color: black; font-size: 40px">0</span>
-                <span style="font-weight: bold;">TRY</span>
+                <span style="font-weight: bold;">G2G CÜZDANINA </span>
+                <span id="wallet-price-usd-sold" class="badge badge-primary badge-pill"
+                    style="color: green; font-size: 40px">0</span>
+                <span style="font-weight: bold;">USD GELECEK</span>
             </li>
             <li class="list-group-item d-flex justify-content-center align-items-center">
-                <span id="last-price-usd" class="badge badge-primary badge-pill"
-                    style="color: black; font-size: 40px">0</span>
-                <span style="font-weight: bold;">USD</span>
+                <span style="font-weight: bold;">BANKA HESABINA</span>
+                <span id="last-price-tl" class="badge badge-primary badge-pill"
+                    style="color: green; font-size: 40px">0</span>
+                <span style="font-weight: bold;">TRY GELECEK</span>
             </li>
             <li id="errorAndinfo" class="list-group-item d-flex justify-content-center align-items-center">
                 <span style="font-weight: bold;">USD Hesaplaması Payoneer Kesintisi olmadan
@@ -69,15 +71,16 @@
         <ul class="list-group">
             <li class="list-group-item d-flex justify-content-center align-items-center">
                 <span id="wallet-price-tl" class="badge badge-primary badge-pill"
-                    style="color: black; font-size: 40px">0</span>
+                    style="color: green; font-size: 40px">0</span>
                 <span style="font-weight: bold;">TRY</span>
             </li>
             <li id="errorAndinfoWallet" class="list-group-item d-flex justify-content-center align-items-center">
-                <span style="font-weight: bold;">Birden Fazla Satıştan Biriken Parayı Payoneer Kesintisi Hesaplanarak Banka Hesabınıza Gelecek Net Para Hesaplanır</span>
+                <span style="font-weight: bold;">Birden Fazla Satıştan Biriken Parayı Payoneer Kesintisi Hesaplanarak
+                    Banka Hesabınıza Gelecek Net Para Hesaplanır</span>
             </li>
         </ul>
     </div>
-<hr class="m-5">
+    <hr class="m-5">
 
 
 
@@ -85,7 +88,7 @@
     <script src="walletCalculator.js"></script>
     <script src="soldFeeCalculator.js"></script>
     <script>
-                let apiLink =
+        let apiLink =
             `https://api.getgeoapi.com/v2/currency/convert?api_key=b7f8784b081fae6a7d05abca3696ae8f4fab6a35&from=USD&to=TRY&amount=1&format=json`;
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {

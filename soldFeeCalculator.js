@@ -17,7 +17,7 @@
                 let fee3 = fee2 * 0.04;
                 let pr2 = Math.floor(fee2 - fee3);
 
-                console.log(pr2)
+                document.querySelector('#wallet-price-usd-sold').innerHTML = pr1;
 
                 let apiLink =
                     `https://api.getgeoapi.com/v2/currency/convert?api_key=b7f8784b081fae6a7d05abca3696ae8f4fab6a35&from=USD&to=TRY&amount=${pr2}&format=json`;
@@ -31,7 +31,6 @@
 
 
                         document.querySelector('#last-price-tl').innerHTML = lastPriceTRY;
-                        document.querySelector('#last-price-usd').innerHTML = pr2;
                     }
                 };
                 xhttp.open("GET", apiLink, true);
