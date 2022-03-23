@@ -27,7 +27,7 @@
                         let data = JSON.parse(this.responseText);
                         let currentUSDwithFee = data.rates.TRY.rate - 0.30;
                         console.log(currentUSDwithFee)
-                        let lastPriceTRY = pr2 * currentUSDwithFee;
+                        let lastPriceTRY = (pr2 * currentUSDwithFee).toFixed(2);
 
 
                         document.querySelector('#last-price-tl').innerHTML = lastPriceTRY;
